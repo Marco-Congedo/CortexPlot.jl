@@ -176,12 +176,12 @@ The first drop-box menu allows the user to switch between five available display
 
 ---
 
-The second drop-box menu allows to select the color scheme for the color map. Note that there two kinds of color schemes, to be used depending on the data, as suggested in this table:
+The second drop-box menu allows to select the color scheme for the color map. Note that there are two kinds of color schemes, to be used depending on the data kind, as reported in this table (legend: cdsm = current density square module):
 
-| color schemes  | type of data | example usage |
+| Color schemes  | Data kind | Example usage |
 |:--------|:-------|:--------------|
-| rain, magma, bilbao, solar | non-negative   |  current density square module, unsigned test-statistics such as ANOVA's F  |
-| roma, broc, redsblues, vik | real   |  current density square module differences, signed test-statistics such as Pearson's r and student's t |
+| rain, magma, bilbao, solar | non-negative   |  cdsm, unsigned test-statistics such as ANOVA's F  |
+| roma, broc, redsblues, vik | real   |  cdsm differences, signed test-statistics such as Pearson's r and student's t |
 
 ---
 
