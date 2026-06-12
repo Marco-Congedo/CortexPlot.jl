@@ -146,7 +146,7 @@ The first drop-box menu allows the user to switch between five available display
 
 ---
 
-3) `Cortex3D_3view`: as 1., but displays also the three sections through a desired voxel. To set the voxel, either point the mouse on the cortex and hit the "V" key, or enter the voxel coordinates in the text boxes (Fig. 3).
+3) `Cortex3D_3view`: as 1., but displays also the three sections through a desired voxel. To set the voxel, either point the mouse on the cortex and hit the "V" key, or enter the voxel coordinates in the text boxes and click the "Display Views" button (Fig. 3).
 
 <p align="left">
   <img src="Documents/Fig3.png" width="560">
