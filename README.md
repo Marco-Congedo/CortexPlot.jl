@@ -71,7 +71,7 @@ This package allows the visualization in **2D** and **3D** of **functional brain
 > The standard cortices used in this package are read from [Leadfields.jl](https://github.com/Marco-Congedo/Leadfields.jl). They have been pre-computed via [BrainStorm](https://neuroimage.usc.edu/brainstorm/Introduction) by [OpenMEEG](https://openmeeg.github.io/), using the ‘fsaverage’ adult head model (FreeSurfer’s default template based on 40 normative brains). The computation of the associated leadfields is based on the Boundary Element Method (BEM).
 >
 > The available cortex structural data and leadfields correspond to:  
-> 1) 7509 unconstrained brain dipolar sources (*p = 2503 voxels* × 3 cartesian orientations); voxel size: 4.3mm (default)
+> 1) 7509 unconstrained brain dipolar sources (*p = 2503 voxels* × 3 cartesian orientations); voxel size: 4.8mm (default)
 > 2) 15006 unconstrained brain dipolar sources (*p = 5002 voxels* × 3 cartesian orientations); voxel size: 3mm
 >
 > The cortical data and associated leadfields can be found [here](https://github.com/Marco-Congedo/Leadfields.jl/tree/master/Meshes).
