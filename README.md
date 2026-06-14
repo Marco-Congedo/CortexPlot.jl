@@ -248,11 +248,10 @@ Then, run this script:
 using Eegle, Leadfields, Xloreta, CortexPlot, GLMakie
 
 # read example EEG data, sampling rate and sensor labels using Eegle.jl
-X, sr = readASCII(EXAMPLE_Normative_1), 128;
-
 # use only the first 128 time samples of X
 # VERY IMPORTANT: The data must in common average reference
 # function car! is exported by Eegle.jl
+X, sr = readASCII(EXAMPLE_Normative_1), 128;
 X = car!(X[1:sr, :]) 
 sensors = readSensors(EXAMPLE_Normative_1_sensors);
 
