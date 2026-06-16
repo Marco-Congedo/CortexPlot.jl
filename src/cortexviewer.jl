@@ -5,7 +5,10 @@ function cortex_dashboard(data :: Union{Vector{A}, Matrix{A}};
                         colorbar_label :: String = "Current density square module",
                         fontsize :: Real = 16.0,
                         colorscheme :: Symbol = :rain
-                        )where {A<:Real}
+                        ) where {A<:Real}
+
+    print(titleFont, "\n📈  Opening the CortexPlot dashboard... ")
+
     global f
     f          = Figure(backgroundcolor = RGBf(1, 1, 1), size = (1200, 700))
     t_idx      = Observable(1) #Observable referring to the time 
@@ -145,6 +148,8 @@ function cortex_dashboard(data :: Union{Vector{A}, Matrix{A}};
         colormap[] = Symbol(s)
     end
 
+    println(defaultFont)
+
     f
 end
 
@@ -155,7 +160,10 @@ function cortex_plot(data :: Union{Vector{A}, Matrix{A}};
                     title :: String = "Brain activation",
                     colorbar_label :: String = "Current density square module",
                     colorscheme:: Symbol = :rain,
-                    fontsize :: Real = 16.0)where {A<:Real}
+                    fontsize :: Real = 16.0) where {A<:Real}
+    
+    print(titleFont, "\n📈  Producing a CORTEX plot... ")
+
     global f
     f          = Figure(backgroundcolor = RGBf(1, 1, 1), size = (1200, 700))
     t_idx      = Observable(1) #Observable referring to the time 
@@ -265,6 +273,8 @@ function cortex_plot(data :: Union{Vector{A}, Matrix{A}};
     on(colormap_menu.selection) do s
         colormap[] = Symbol(s)
     end
+
+    println(defaultFont)
 
     f
 end
