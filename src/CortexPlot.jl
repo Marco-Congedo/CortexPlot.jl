@@ -9,6 +9,8 @@ using MAT
 using LinearAlgebra
 using GeometryBasics
 using MeshIO
+using PrecompileSignatures: @precompile_signatures
+
 
 # colors for printing messages
 const titleFont = "\x1b[38;5;71m"
@@ -27,5 +29,7 @@ include("cortex2D_8view.jl")
 include("cortex3D_3view.jl")
 include("cortex2D_3view.jl")
 include("cortexviewer.jl")
+
+@precompile_signatures(CortexPlot)
 
 end

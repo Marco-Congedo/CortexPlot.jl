@@ -231,7 +231,7 @@ The "Display max" button displays the sections through the voxel with maximum va
 
 Besides **CortexPlot.jl**, the following example makes use of packages: 
 
-- [Eegle.jl](https://github.com/Marco-Congedo/Eegle.jl) to import example EEG data
+- [Eegle.jl](https://github.com/Marco-Congedo/Eegle.jl) to import example EEG data and compute the common average reference
 - [Leadfields.jl](https://github.com/Marco-Congedo/Leadfields.jl) to read a leadfield matrix
 - [Xloreta.jl](https://github.com/Marco-Congedo/Xloreta.jl) to compute the sLORETA transformation matrix and to compute current density square module vectors from current density vectors.
 - [GLMakie.jl](https://docs.makie.org/stable/explanations/backends/glmakie.html), the plotting backend.
@@ -252,7 +252,7 @@ using Eegle, Leadfields, Xloreta, CortexPlot, GLMakie
 # VERY IMPORTANT: The data must in common average reference
 # function car! is exported by Eegle.jl
 X, sr = readASCII(EXAMPLE_Normative_1), 128;
-X = car!(X[1:sr, :]) 
+X = car!(X[1:sr, :]); 
 sensors = readSensors(EXAMPLE_Normative_1_sensors);
 
 # computes a leadfield matrix for 5002 voxels using Leadfields.jl
